@@ -1,0 +1,293 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+body{
+    background-color: #bcbcbc55;
+}
+
+#header{
+    width: 100vw;
+    position: fixed;
+    background-color: #fd611a;
+}
+
+.top-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#logo-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header-image{
+    height: 2.5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+#logo-p{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.nav-toggle{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.nav-menu{
+    background-color: #424242;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding-top: 1rem;
+    left: 100%;
+    transition: all .5s;
+}
+
+#nav-ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem 1rem 0 1rem;
+    list-style: none;
+}
+
+.nav-link{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1.2rem;
+}
+
+.nav-link:hover{
+    background-color: #0000002d;
+}
+
+.nav-li{
+    margin-bottom: .6rem;
+}
+
+.nav-menu_visible{
+    left: 0%;
+}
+
+#main{
+    padding-top: 72px;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5rem;
+    width: 80%;
+}
+
+.features-icon{
+    font-size: 6rem;
+    margin-bottom: 1.5rem;
+}
+
+.features-h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.features-p{
+    margin: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+}
+
+#video{
+    width: 95%;
+    height: 20rem;
+    display: block;
+    margin: 2rem auto 2rem auto;
+}
+
+.prices-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    border: 5px solid #fd611a;
+    border-radius: 10px;
+    margin-top: 3rem;
+    padding: 1rem;
+}
+
+.prices-h3{
+    font-size: 1.7rem;
+    padding: 1rem 1rem 0 1rem;
+}
+
+.prices-h4{
+    font-size: 1.5rem;
+    padding: .5rem;
+}
+
+.prices-li{
+    font-size: 1.3rem;
+    list-style: none;
+    padding: .7rem;
+}
+
+#form-section, #form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form{
+    width: 75%;
+}
+
+#email{
+    width: 100%;
+    height: 3.2rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    padding: .5rem
+}
+
+#submit{
+    width: 70%;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #fd611a;
+    border-radius: 5px;
+}
+
+#footer{
+    width: 100%;
+    background-color: #727272;
+}
+
+.footer-ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-li{
+    list-style: none;
+    margin-top: 1.5rem;
+}
+
+.footer-link{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.footer-p{
+    text-align: center;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+    color: #dddddd;
+}
+
+@media (min-width: 768px){
+    *{
+        font-size: 140%;
+    }
+
+    .nav-toggle{
+        margin-right: 2rem;
+    }
+
+    #video{
+        height: 30rem;
+    }
+
+    .footer-p{
+        font-size: 1.2rem;
+    }
+
+    .footer-li{
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1200px){
+    *{
+        font-size: 70%;
+    }
+
+    .nav-toggle{
+        display: none;
+    }
+
+    .section{
+        flex-direction: row;
+    }
+
+    #video{
+        width: 40%;
+        margin: 5rem auto 5rem auto ;
+    }
+
+    .prices-container{
+        margin: 0 4rem 0 4rem;
+    }
+
+    #email{
+        width: 40%;
+        margin-top: 5rem;
+    }
+
+    #submit{
+        width: 25%;
+        margin-bottom: 5rem ;
+    }
+
+    .footer-li{
+        margin: 2rem 0 1.5rem 0;
+    }
+
+    .nav-menu{
+        left: 0;
+        padding: 0;
+        height: auto;
+
+    }
+
+    #nav-ul{
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    .nav-li{
+        margin: 0;
+    }
+
+    #main{
+        padding-top: 100px;
+    }
+}
